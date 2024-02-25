@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Panel</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+</head>
+<body>
+    <div class="register-form-container">
+        <form action="register.php" method="post">
+            <h1>Register</h1>
+            <div class="input-container">
+                <img src="../icons/email.png" alt="email-icon">
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+            </div>
+            <div class="input-container">
+                <img src="../icons/user.png" alt="username-icon">
+                <input type="text" name="username" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-container">
+                <img src="../icons/padlock.png" alt="password-icon">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <div id="toggle" onclick="showHide();"></div>
+            </div>
+            <div class="input-container">
+                <img src="../icons/padlock.png" alt="password-icon">
+                <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm password" required>
+            </div>
+
+            <div class="input-container">
+                <input type="checkbox" name="terms" id="terms" required>
+                <label for="terms">I accept the <a href="#">terms and privacy policy</a></label>
+            </div>
+
+            <button type="submit" name="register">Sign Up</button>
+
+            
+        </form>
+
+        <hr>
+
+            <p>Already have an account?</p>
+            <a href="../login-panel/login.html">
+            <button id="login-btn">Login</button>
+            </a>
+    </div>
+</body>
+</html>

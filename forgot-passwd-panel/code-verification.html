@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Verification</title>
+    <link rel="stylesheet" href="code-verification.css">
+</head>
+<body>
+    <div class="verify-form-container">
+        <form action="verify.php" method="post">
+            <h1>Verify Code</h1>
+
+            <p class="text">
+                Please enter the 6-digit code 
+                that has been sent to the email address you provided.
+            </p>
+
+            <div class="code-inputs">
+                <input type="text" name="code-input" id="first-input">
+                <input type="text" name="code-input" id="second-input">
+                <input type="text" name="code-input" id="third-input">
+                <input type="text" name="code-input" id="fourth-input">
+                <input type="text" name="code-input" id="fifth-input">
+                <input type="text" name="code-input" id="sixth-input">
+            </div>
+            
+            <a href="#">
+                <button name="verify">Verify</button>
+            </a>
+        </form>
+
+        <a href="forgot-passwd.html">
+            <button type="submit" name="back-to-forgot">Back</button>
+        </a>
+
+    </div>
+</body>
+</html>

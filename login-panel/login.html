@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Panel</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="login-form-container">
+        <form action="register.php" method="post">
+            <h1>Sign in your credentials</h1>
+            <div class="input-container">
+                <img src="../icons/user.png" alt="user-icon">
+                <input type="text" name="username" id="username" placeholder="Username or e-mail" required>
+            </div>
+            <div class="input-container">
+                <img src="../icons/padlock.png" alt="password-icon">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <a href="../forgot-passwd-panel/forgot-passwd.html" id="forgot-passwd">Forgot password?</a>
+                <a href="../register-panel/register.html" id="sign-up">Sign Up</a>
+                <div id="toggle" onclick="showHide();"></div>
+            </div>
+
+            <div class="input-container">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+
+            <button type="submit" name="login">Login</button>
+
+        </form>
+
+        <hr>
+
+        <a href="https://google.com" name="social-media">
+            <div class="social-media">
+                <img src="../icons/google.png" alt="google-icon">
+                <span>Sign in with Google</span>
+            </div>
+        </a>
+
+        <a href="https://facebook.com" name="social-media">
+            <div class="social-media">
+                <img src="../icons/facebook.png" alt="facebook-icon">
+                <span>Sign in with Facebook</span>
+            </div>
+        </a>
+
+        <a href="https://apple.com" name="social-media">
+            <div class="social-media">
+                <img src="../icons/apple.png" alt="apple-icon">
+                <span>Sign in with Apple</span>
+            </div>
+        </a>
+
+    </div>
+</body>
+</html>

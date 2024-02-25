@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:  #000000ec;
+}
+
+.verify-form-container {
+    height: 375px;
+    width: 300px;
+    padding: 20px;
+    background:    #ffffff ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 5px  #000000;
+}
+
+.verify-form-container button[name="verify"] {
+    width: 80%;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: #979797 ;
+    box-shadow: 3px 3px 10px  #979797 ;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 50%
+}
+
+.verify-form-container button[name="verify"]:hover {
+    opacity: 100%;
+    box-shadow: 6px 6px 10px  #979797;
+}
+
+.verify-form-container h1 {
+    text-align: center;
+    margin-bottom: 5px
+}
+
+.verify-form-container button[name="back-to-forgot"] {
+    width: 80%;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: #000000 ;
+    box-shadow: 3px 3px 10px  #000000 ;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    opacity: 50%
+}
+
+.verify-form-container button[name="back-to-forgot"]:hover {
+    opacity: 100%;
+    box-shadow: 6px 6px 10px  #000000;
+}
+
+.verify-form-container input[name="code-input"] {
+    height: 50px;
+    width: 35px;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: 600;
+}
+
+.verify-form-container input[name="code-input"]:focus {
+    background-color: #d1cfcfcb;
+}
+
+.text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 11px;
+
+}

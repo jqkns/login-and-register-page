@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password Panel</title>
+    <link rel="stylesheet" href="forgot-passwd.css">
+</head>
+<body>
+    <div class="forgot-passwd-form-container">
+        <form action="forgot-passwd.php" method="post">
+            <h1>Verify E-mail</h1>
+
+            <p class="text">
+                Enter your email address to which the verification code 
+                will be delivered for account verification.
+            </p>
+
+            <div class="input-container">
+                <img src="../icons/email.png" alt="email-icon">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+            </div>
+            
+        </form>
+
+
+        <a href="code-verification.html">
+            <button name="forgot-passwd">Send Code</button>
+        </a>
+
+        <a href="../login-panel/login.html">
+            <button name="back-to-login">Back</button>
+        </a>
+
+    </div>
+</body>
+</html>

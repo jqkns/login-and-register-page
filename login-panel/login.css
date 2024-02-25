@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:  #000000ec;
+}
+
+.login-form-container {
+    height: 535px;
+    width: 300px;
+    padding: 20px;
+    background:    #ffffff ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 5px  #000000;
+}
+
+.login-form-container h1 {
+    text-align: center;
+    margin-bottom: 5px
+}
+
+.input-container input {
+    z-index: 1;
+    position: relative;
+    width: 250px;
+    height: 30px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(105, 105, 105);
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+.input-container input::placeholder {
+    color:  #000000;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.input-container img {
+    z-index: 2;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.login-form-container button {
+    width: 80%;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: #979797 ;
+    box-shadow: 3px 3px 10px  #979797 ;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 50%
+}
+
+.login-form-container button:hover {
+    opacity: 100%;
+    box-shadow: 6px 6px 10px  #979797 ;
+}
+
+.login-form-container a[id="forgot-passwd"], .login-form-container a[id="sign-up"] {
+    color: black;
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    padding-left: 20px;
+    letter-spacing: -0.15px;
+}
+
+.login-form-container a[id="forgot-passwd"]:hover, .login-form-container a[id="sign-up"]:hover {
+    font-weight: 600;
+}
+
+hr {
+    display: inline-block;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 13px;
+    border: 1px solid black
+}
+
+.login-form-container p {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1.05px;
+    margin-bottom:-10px
+}
+
+.login-form-container #login-btn {
+    width: 50%;
+    height: 25px;
+    font-size: 13px;
+    margin-left: 25%;
+}
+
+.input-container input[type="checkbox"] {
+    position: relative;
+    margin-top: 15px;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    accent-color: black;
+}
+
+.input-container label {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    font-weight: 400;
+}
+
+.input-container label a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#toggle {
+    z-index: 2;
+    position: absolute;
+    margin-top: -53px;
+    margin-left: 225px;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../icons/show.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+#toggle.hide {
+    background-image: url(../icons/hide.png);
+    background-size: cover;
+}
+
+.login-form-container a[id="sign-up"] {
+    margin-left: 40px
+}
+
+.social-media {
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.social-media span {
+    display: block;
+    font-weight: 600;
+    padding-left: 20px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+a[name="social-media"] {
+    text-decoration: none;
+    color: black;
+}
+
+.social-media img {
+    width: 25px;
+    height: 25px;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    cursor: pointer;
+}
+
+.social-media:hover {
+    background-color: #dadada;
+    box-shadow: 5px 5px 10px;
+}
